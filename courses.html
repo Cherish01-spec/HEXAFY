@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Hexafy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="glow-effect">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="neon-text">HEXAFY</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="neon-hover">Home</a></li>
+                    <li><a href="courses.html" class="neon-hover active">Courses</a></li>
+                    <li><a href="internships.html" class="neon-hover">Internships</a></li>
+                    <li><a href="index.html#testimonials" class="neon-hover">Success Stories</a></li>
+                    <li><a href="verify-certificate.html" class="neon-hover">Verify Certificate</a></li>
+                    <li><a href="contact-us.html" class="neon-hover">Contact</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                    <li>
+                        <button class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Courses Hero -->
+    <section class="courses-hero">
+        <div class="courses-bg"></div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1 class="glowing-title">Explore Our <span class="neon-text">Courses</span></h1>
+                <p class="hero-subtitle">Master in-demand tech skills with industry-relevant curriculum</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses">
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category" class="neon-input">
+                        <option value="all">All Categories</option>
+                        <option value="web">Web Development</option>
+                        <option value="mobile">Mobile Development</option>
+                        <option value="data">Data Science</option>
+                        <option value="ai">AI & ML</option>
+                        <option value="cloud">Cloud & DevOps</option>
+                        <option value="cyber">Cybersecurity</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="duration">Duration:</label>
+                    <select id="duration" class="neon-input">
+                        <option value="all">Any Duration</option>
+                        <option value="short">Short (1-4 weeks)</option>
+                        <option value="medium">Medium (4-8 weeks)</option>
+                        <option value="long">Long (8+ weeks)</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="level">Level:</label>
+                    <select id="level" class="neon-input">
+                        <option value="all">All Levels</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="course-grid">
+                <div class="course-card reveal">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="React Course">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tag">Web Development</div>
+                        <h3>React Masterclass</h3>
+                        <p>Build modern web apps with React hooks, context, and Redux</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> Advanced</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>4.5 (1,250 reviews)</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">₹12,999</span>
+                            <span class="original-price">₹19,999</span>
+                            <span class="discount">35% OFF</span>
+                        </div>
+                        <a href="#" class="enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <!-- 15+ more course cards with similar structure -->
+                <div class="course-card reveal">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Python Course">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-tag">Programming</div>
+                        <h3>Python Bootcamp</h3>
+                        <p>From basics to advanced Python programming</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 6 weeks</span>
+                            <span><i class="fas fa-user-graduate"></i> Beginner</span>
+                        </div>
+                        <div class="course-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (2,300 reviews)</span>
+                        </div>
+                        <div class="course-price">
+                            <span class="price">₹8,999</span>
+                            <span class="original-price">₹14,999</span>
+                            <span class="discount">40% OFF</span>
+                        </div>
+                        <a href="#" class="enroll-btn">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <!-- More courses would be added here -->
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn next">Next <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Categories -->
+    <section class="course-categories">
+        <div class="container">
+            <h2 class="section-title reveal">Browse by <span class="neon-text">Category</span></h2>
+            <div class="categories-grid">
+                <div class="category-card reveal">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Frontend, Backend & Full Stack</p>
+                    <span class="course-count">24 Courses</span>
+                </div>
+                
+                <div class="category-card reveal">
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <p>Android, iOS & Cross-Platform</p>
+                    <span class="course-count">18 Courses</span>
+                </div>
+                
+                <div class="category-card reveal">
+                    <div class="category-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Science</h3>
+                    <p>Analytics, Visualization & ML</p>
+                    <span class="course-count">22 Courses</span>
+                </div>
+                
+                <div class="category-card reveal">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI & ML</h3>
+                    <p>Deep Learning, NLP & Computer Vision</p>
+                    <span class="course-count">16 Courses</span>
+                </div>
+                
+                <div class="category-card reveal">
+                    <div class="category-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & DevOps</h3>
+                    <p>AWS, Azure, Docker & Kubernetes</p>
+                    <span class="course-count">14 Courses</span>
+                </div>
+                
+                <div class="category-card reveal">
+                    <div class="category-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Ethical Hacking & Network Security</p>
+                    <span class="course-count">12 Courses</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Same as index.html footer -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

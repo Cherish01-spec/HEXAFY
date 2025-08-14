@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hexafy - Learn. Intern. Get Hired.</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="glow-effect">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="neon-text">HEXAFY</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="neon-hover active">Home</a></li>
+                    <li><a href="courses.html" class="neon-hover">Courses</a></li>
+                    <li><a href="internships.html" class="neon-hover">Internships</a></li>
+                    <li><a href="#testimonials" class="neon-hover">Success Stories</a></li>
+                    <li><a href="verify-certificate.html" class="neon-hover">Verify Certificate</a></li>
+                    <li><a href="contact-us.html" class="neon-hover">Contact</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                    <li>
+                        <button class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1 class="glowing-title">Learn. Intern. Get Hired – with <span class="neon-text">Hexafy</span></h1>
+                <p class="hero-subtitle">India's #1 platform for tech education and career growth</p>
+                <div class="hero-buttons">
+                    <a href="register.html" class="btn-primary neon-btn">Get Started</a>
+                    <a href="courses.html" class="btn-secondary">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+        <div class="notification-banner">
+            <div class="banner-content">
+                <span><i class="fas fa-bell"></i> Akash enrolled in React Masterclass</span>
+                <span><i class="fas fa-bell"></i> Priya secured a remote internship at TechCorp</span>
+                <span><i class="fas fa-bell"></i> Rohit bought Python Bootcamp</span>
+                <span><i class="fas fa-bell"></i> 10,000+ students enrolled this month</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal">
+                    <h3 class="counter" data-target="25000">0</h3>
+                    <p>Students Enrolled</p>
+                </div>
+                <div class="stat-card reveal">
+                    <h3 class="counter" data-target="1500">0</h3>
+                    <p>Internships Secured</p>
+                </div>
+                <div class="stat-card reveal">
+                    <h3 class="counter" data-target="120">0</h3>
+                    <p>Courses Available</p>
+                </div>
+                <div class="stat-card reveal">
+                    <h3 class="counter" data-target="95">0</h3>
+                    <p>Success Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Preview Section -->
+    <section class="courses-preview">
+        <div class="container">
+            <h2 class="section-title reveal">Popular <span class="neon-text">Courses</span></h2>
+            <div class="course-grid">
+                <div class="course-card reveal">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="React Course">
+                    </div>
+                    <div class="course-content">
+                        <h3>React Masterclass</h3>
+                        <p>Build modern web apps with React hooks, context, and Redux</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 8 weeks</span>
+                            <span><i class="far fa-play-circle"></i> 32 lessons</span>
+                        </div>
+                        <a href="courses.html" class="enroll-btn">Explore Course</a>
+                    </div>
+                </div>
+                
+                <div class="course-card reveal">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Python Course">
+                    </div>
+                    <div class="course-content">
+                        <h3>Python Bootcamp</h3>
+                        <p>From basics to advanced Python programming</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 6 weeks</span>
+                            <span><i class="far fa-play-circle"></i> 24 lessons</span>
+                        </div>
+                        <a href="courses.html" class="enroll-btn">Explore Course</a>
+                    </div>
+                </div>
+                
+                <div class="course-card reveal">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Machine Learning Course">
+                    </div>
+                    <div class="course-content">
+                        <h3>Machine Learning</h3>
+                        <p>Learn ML algorithms with Python and TensorFlow</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 10 weeks</span>
+                            <span><i class="far fa-play-circle"></i> 40 lessons</span>
+                        </div>
+                        <a href="courses.html" class="enroll-btn">Explore Course</a>
+                    </div>
+                </div>
+                
+                <div class="course-card reveal">
+                    <div class="course-img">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Web Development Course">
+                    </div>
+                    <div class="course-content">
+                        <h3>Web Development</h3>
+                        <p>Full stack development with MERN stack</p>
+                        <div class="course-meta">
+                            <span><i class="far fa-clock"></i> 12 weeks</span>
+                            <span><i class="far fa-play-circle"></i> 48 lessons</span>
+                        </div>
+                        <a href="courses.html" class="enroll-btn">Explore Course</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="courses.html" class="btn-secondary">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Preview Section -->
+    <section class="internships-preview">
+        <div class="container">
+            <h2 class="section-title reveal">Featured <span class="neon-text">Internships</span></h2>
+            <div class="internship-grid">
+                <div class="internship-card reveal">
+                    <div class="internship-img">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="React Internship">
+                    </div>
+                    <div class="internship-content">
+                        <h3>React Developer</h3>
+                        <p class="company">TechCorp</p>
+                        <p>Work on cutting-edge React applications</p>
+                        <div class="internship-meta">
+                            <span><i class="far fa-calendar-alt"></i> 3 months</span>
+                            <span><i class="fas fa-rupee-sign"></i> ₹15,000/mo</span>
+                        </div>
+                        <a href="internships.html" class="enroll-btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="internship-card reveal">
+                    <div class="internship-img">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Python Internship">
+                    </div>
+                    <div class="internship-content">
+                        <h3>Python Developer</h3>
+                        <p class="company">DataSystems</p>
+                        <p>Build Python backend services</p>
+                        <div class="internship-meta">
+                            <span><i class="far fa-calendar-alt"></i> 2 months</span>
+                            <span><i class="fas fa-rupee-sign"></i> ₹12,000/mo</span>
+                        </div>
+                        <a href="internships.html" class="enroll-btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="internship-card reveal">
+                    <div class="internship-img">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="ML Internship">
+                    </div>
+                    <div class="internship-content">
+                        <h3>ML Engineer</h3>
+                        <p class="company">AI Labs</p>
+                        <p>Machine learning model development</p>
+                        <div class="internship-meta">
+                            <span><i class="far fa-calendar-alt"></i> 4 months</span>
+                            <span><i class="fas fa-rupee-sign"></i> ₹20,000/mo</span>
+                        </div>
+                        <a href="internships.html" class="enroll-btn">View Details</a>
+                    </div>
+                </div>
+                
+                <div class="internship-card reveal">
+                    <div class="internship-img">
+                        <img src="https://images.unsplash.com/photo-1463171379579-3fdfb86d6285?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Web Dev Internship">
+                    </div>
+                    <div class="internship-content">
+                        <h3>Web Developer</h3>
+                        <p class="company">WebSolutions</p>
+                        <p>Full stack web development</p>
+                        <div class="internship-meta">
+                            <span><i class="far fa-calendar-alt"></i> 3 months</span>
+                            <span><i class="fas fa-rupee-sign"></i> ₹15,000/mo</span>
+                        </div>
+                        <a href="internships.html" class="enroll-btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="internships.html" class="btn-secondary">View All Internships</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="section-title reveal">Student <span class="neon-text">Success Stories</span></h2>
+            <div class="testimonial-container">
+                <div class="cube" id="testimonialCube">
+                    <div class="cube-face">
+                        <div class="student-img">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Akash Sharma">
+                        </div>
+                        <p class="testimonial-text">"Hexafy changed my life! From zero to React hero in just 3 months. Abhi main ek MNC mein React developer ka job kar raha hoon. Best decision ever!"</p>
+                        <h4 class="student-name">Akash Sharma</h4>
+                        <p class="student-course">React Masterclass</p>
+                    </div>
+                    <div class="cube-face">
+                        <div class="student-img">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya Patel">
+                        </div>
+                        <p class="testimonial-text">"I was struggling with coding until I joined Hexafy. Their Python course is so well-structured. Aaj main apna startup launch karne wali hoon!"</p>
+                        <h4 class="student-name">Priya Patel</h4>
+                        <p class="student-course">Python Bootcamp</p>
+                    </div>
+                    <div class="cube-face">
+                        <div class="student-img">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Rohit Kumar">
+                        </div>
+                        <p class="testimonial-text">"Best platform for learning web development. Maine 2 mahine mein hi apna portfolio website bana liya. Teachers ka support amazing hai!"</p>
+                        <h4 class="student-name">Rohit Kumar</h4>
+                        <p class="student-course">Web Development</p>
+                    </div>
+                    <div class="cube-face">
+                        <div class="student-img">
+                            <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="Neha Gupta">
+                        </div>
+                        <p class="testimonial-text">"Hexafy's ML course helped me switch from mechanical engineering to data science. Ab main ek AI startup mein kaam karti hoon. Dream come true!"</p>
+                        <h4 class="student-name">Neha Gupta</h4>
+                        <p class="student-course">Machine Learning</p>
+                    </div>
+                    <div class="cube-face">
+                        <div class="student-img">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Vikram Singh">
+                        </div>
+                        <p class="testimonial-text">"As a BCA student, I never thought I could get into cybersecurity. Hexafy's practical approach gave me the skills and confidence. Got my first job at 6 LPA!"</p>
+                        <h4 class="student-name">Vikram Singh</h4>
+                        <p class="student-course">Cybersecurity</p>
+                    </div>
+                    <div class="cube-face">
+                        <div class="student-img">
+                            <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="Ananya Reddy">
+                        </div>
+                        <p class="testimonial-text">"The data science course is top-notch! Projects were industry-relevant. Internship placement through Hexafy helped me start my career."</p>
+                        <h4 class="student-name">Ananya Reddy</h4>
+                        <p class="student-course">Data Science</p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-nav">
+                <div class="testimonial-dot active" data-face="0"></div>
+                <div class="testimonial-dot" data-face="1"></div>
+                <div class="testimonial-dot" data-face="2"></div>
+                <div class="testimonial-dot" data-face="3"></div>
+                <div class="testimonial-dot" data-face="4"></div>
+                <div class="testimonial-dot" data-face="5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Verification CTA -->
+    <section class="certificate-cta">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Verify Your Hexafy Certificate</h2>
+                <p>Check the authenticity of your earned certificates with our verification system</p>
+                <a href="verify-certificate.html" class="btn-primary neon-btn">Verify Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content reveal">
+                <h2>Ready to Transform Your Career?</h2>
+                <p>Join thousands of students who've already kickstarted their tech journey with Hexafy</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="btn-primary neon-btn">Sign Up Free</a>
+                    <a href="contact-us.html" class="btn-secondary">Talk to Counselor</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="neon-text">HEXAFY</span>
+                    <p>Learn. Intern. Get Hired.</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="internships.html">Internships</a></li>
+                        <li><a href="#testimonials">Success Stories</a></li>
+                        <li><a href="verify-certificate.html">Verify Certificate</a></li>
+                        <li><a href="contact-us.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" data-tooltip="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-icon" data-tooltip="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> hello@hexafy.in</p>
+                        <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Bangalore, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Hexafy. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-amazon-pay"></i>
+                    <i class="fab fa-google-pay"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

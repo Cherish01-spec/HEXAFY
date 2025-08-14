@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify Certificate - Hexafy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="glow-effect">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="neon-text">HEXAFY</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="neon-hover">Home</a></li>
+                    <li><a href="courses.html" class="neon-hover">Courses</a></li>
+                    <li><a href="internships.html" class="neon-hover">Internships</a></li>
+                    <li><a href="index.html#testimonials" class="neon-hover">Success Stories</a></li>
+                    <li><a href="verify-certificate.html" class="neon-hover active">Verify Certificate</a></li>
+                    <li><a href="contact-us.html" class="neon-hover">Contact</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                    <li>
+                        <button class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Verification Hero -->
+    <section class="verify-hero">
+        <div class="verify-bg"></div>
+        <div class="container">
+            <div class="verify-content reveal">
+                <h1 class="glowing-title">Verify Your <span class="neon-text">Certificate</span></h1>
+                <p class="hero-subtitle">Check the authenticity of your Hexafy certificates and internships</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Verification Form -->
+    <section class="verify-form-section">
+        <div class="container">
+            <div class="verify-form-container reveal">
+                <form id="verifyForm">
+                    <div class="form-group">
+                        <label for="certificateNumber">
+                            <i class="fas fa-certificate"></i> Certificate Number
+                        </label>
+                        <input type="text" id="certificateNumber" name="certificateNumber" required class="neon-input" placeholder="HEX-XXXX-XXXX-XXXX">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="captcha">
+                            <i class="fas fa-shield-alt"></i> Enter CAPTCHA
+                        </label>
+                        <div class="captcha-container">
+                            <div class="captcha-code" id="captchaCode">A7B9C3</div>
+                            <button type="button" class="refresh-captcha" id="refreshCaptcha">
+                                <i class="fas fa-sync-alt"></i>
+                            </button>
+                            <input type="text" id="captcha" name="captcha" required class="neon-input" placeholder="Enter the code above">
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary neon-btn submit-btn">
+                        <span class="btn-text">Verify Certificate</span>
+                        <span class="btn-loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </button>
+                </form>
+                
+                <div class="verify-info">
+                    <h3><i class="fas fa-info-circle"></i> About Certificate Verification</h3>
+                    <p>All Hexafy certificates contain a unique identification number that can be verified through this system. This helps employers and institutions confirm the authenticity of your credentials.</p>
+                    
+                    <div class="info-box">
+                        <i class="fas fa-question-circle"></i>
+                        <h4>Where to find your certificate number?</h4>
+                        <p>Your certificate number is located at the bottom right corner of your issued certificate. It follows the format HEX-XXXX-XXXX-XXXX.</p>
+                    </div>
+                    
+                    <div class="info-box">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <h4>Certificate not found?</h4>
+                        <p>If your certificate cannot be verified, please contact our support team with a copy of your certificate for assistance.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="verification-result" id="verificationResult" style="display: none;">
+                <div class="result-header">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>Certificate Verification Result</h3>
+                </div>
+                
+                <div class="result-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Certificate Number:</span>
+                        <span class="detail-value" id="resultCertNumber">HEX-7B92-4F1A-9C3D</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <span class="detail-label">Student Name:</span>
+                        <span class="detail-value" id="resultStudentName">Akash Sharma</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <span class="detail-label">Program Type:</span>
+                        <span class="detail-value" id="resultProgramType">Course Completion</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <span class="detail-label">Program Name:</span>
+                        <span class="detail-value" id="resultProgramName">React Masterclass</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <span class="detail-label">Completion Date:</span>
+                        <span class="detail-value" id="resultCompletionDate">15 March 2025</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <span class="detail-label">Certificate Status:</span>
+                        <span class="detail-value status-valid" id="resultStatus">Valid</span>
+                    </div>
+                    
+                    <div class="result-actions">
+                        <button class="btn-secondary" id="printResult">
+                            <i class="fas fa-print"></i> Print Verification
+                        </button>
+                        <button class="btn-secondary" id="newVerification">
+                            <i class="fas fa-redo"></i> Verify Another
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Same as index.html footer -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

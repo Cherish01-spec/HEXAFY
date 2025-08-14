@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships - Hexafy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="glow-effect">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="neon-text">HEXAFY</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="neon-hover">Home</a></li>
+                    <li><a href="courses.html" class="neon-hover">Courses</a></li>
+                    <li><a href="internships.html" class="neon-hover active">Internships</a></li>
+                    <li><a href="index.html#testimonials" class="neon-hover">Success Stories</a></li>
+                    <li><a href="verify-certificate.html" class="neon-hover">Verify Certificate</a></li>
+                    <li><a href="contact-us.html" class="neon-hover">Contact</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                    <li>
+                        <button class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Internships Hero -->
+    <section class="internships-hero">
+        <div class="internships-bg"></div>
+        <div class="container">
+            <div class="hero-content reveal">
+                <h1 class="glowing-title">Launch Your Career with <span class="neon-text">Internships</span></h1>
+                <p class="hero-subtitle">Gain real-world experience with top tech companies</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internships Section -->
+    <section class="internships">
+        <div class="container">
+            <div class="filters">
+                <div class="filter-group">
+                    <label for="category">Domain:</label>
+                    <select id="category" class="neon-input">
+                        <option value="all">All Domains</option>
+                        <option value="development">Development</option>
+                        <option value="design">Design</option>
+                        <option value="data">Data Science</option>
+                        <option value="ai">AI & ML</option>
+                        <option value="cloud">Cloud & DevOps</option>
+                        <option value="cyber">Cybersecurity</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="duration">Duration:</label>
+                    <select id="duration" class="neon-input">
+                        <option value="all">Any Duration</option>
+                        <option value="1-2">1-2 months</option>
+                        <option value="3-4">3-4 months</option>
+                        <option value="5-6">5-6 months</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="stipend">Stipend:</label>
+                    <select id="stipend" class="neon-input">
+                        <option value="all">Any Stipend</option>
+                        <option value="paid">Paid</option>
+                        <option value="unpaid">Unpaid</option>
+                        <option value="performance">Performance-based</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="internship-grid">
+                <div class="internship-card reveal">
+                    <div class="internship-img">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="React Internship">
+                        <div class="company-logo">
+                            <img src="https://logo.clearbit.com/techcorp.com" alt="TechCorp">
+                        </div>
+                    </div>
+                    <div class="internship-content">
+                        <h3>React Developer Intern</h3>
+                        <p class="company">TechCorp</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                        <p class="description">Work on cutting-edge React applications for enterprise clients. Opportunity to work with React hooks, context, and Redux.</p>
+                        <div class="internship-meta">
+                            <span><i class="far fa-calendar-alt"></i> 3 months</span>
+                            <span><i class="fas fa-rupee-sign"></i> ₹15,000/mo</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                        <div class="skills">
+                            <span>React</span>
+                            <span>JavaScript</span>
+                            <span>Redux</span>
+                        </div>
+                        <a href="#" class="enroll-btn">Apply Now</a>
+                    </div>
+                </div>
+                
+                <!-- 15+ more internship cards with similar structure -->
+                <div class="internship-card reveal">
+                    <div class="internship-img">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Python Internship">
+                        <div class="company-logo">
+                            <img src="https://logo.clearbit.com/datasystems.com" alt="DataSystems">
+                        </div>
+                    </div>
+                    <div class="internship-content">
+                        <h3>Python Developer Intern</h3>
+                        <p class="company">DataSystems</p>
+                        <p class="location"><i class="fas fa-map-marker-alt"></i> Bangalore</p>
+                        <p class="description">Build Python backend services for data processing applications. Work with Django and Flask frameworks.</p>
+                        <div class="internship-meta">
+                            <span><i class="far fa-calendar-alt"></i> 2 months</span>
+                            <span><i class="fas fa-rupee-sign"></i> ₹12,000/mo</span>
+                            <span><i class="fas fa-briefcase"></i> Full-time</span>
+                        </div>
+                        <div class="skills">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Flask</span>
+                        </div>
+                        <a href="#" class="enroll-btn">Apply Now</a>
+                    </div>
+                </div>
+                
+                <!-- More internships would be added here -->
+            </div>
+            
+            <div class="pagination">
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <a href="#" class="page-btn next">Next <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hiring Partners -->
+    <section class="hiring-partners">
+        <div class="container">
+            <h2 class="section-title reveal">Our <span class="neon-text">Hiring Partners</span></h2>
+            <div class="partners-grid">
+                <div class="partner-logo">
+                    <img src="https://logo.clearbit.com/google.com" alt="Google">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://logo.clearbit.com/amazon.com" alt="Amazon">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://logo.clearbit.com/infosys.com" alt="Infosys">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://logo.clearbit.com/tcs.com" alt="TCS">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://logo.clearbit.com/wipro.com" alt="Wipro">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Same as index.html footer -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

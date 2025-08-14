@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Hexafy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="auth-bg"></div>
+    <div class="auth-container">
+        <div class="auth-card reveal">
+            <div class="auth-header">
+                <h2 class="neon-text">Create Account</h2>
+                <p>Start your tech journey with Hexafy</p>
+            </div>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">
+                        <i class="fas fa-user"></i> Full Name
+                    </label>
+                    <input type="text" id="registerName" name="name" required class="neon-input">
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">
+                        <i class="fas fa-envelope"></i> Email
+                    </label>
+                    <input type="email" id="registerEmail" name="email" required class="neon-input">
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">
+                        <i class="fas fa-lock"></i> Password
+                    </label>
+                    <input type="password" id="registerPassword" name="password" required class="neon-input">
+                    <div class="password-strength">
+                        <div class="strength-meter"></div>
+                        <span class="strength-text">Weak</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">
+                        <i class="fas fa-lock"></i> Confirm Password
+                    </label>
+                    <input type="password" id="registerConfirmPassword" name="confirmPassword" required class="neon-input">
+                </div>
+                <div class="form-group">
+                    <label for="registerPhone">
+                        <i class="fas fa-phone"></i> Phone Number
+                    </label>
+                    <input type="tel" id="registerPhone" name="phone" required class="neon-input">
+                </div>
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#" class="neon-link">Terms & Conditions</a> and <a href="#" class="neon-link">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="btn-primary neon-btn submit-btn">
+                    <span class="btn-text">Register</span>
+                    <span class="btn-loader" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                </button>
+                <div class="auth-footer">
+                    <p>Already have an account? <a href="login.html" class="neon-link">Login here</a></p>
+                </div>
+            </form>
+            <div class="auth-social">
+                <p>Or register with</p>
+                <div class="social-buttons">
+                    <button class="social-btn google-btn">
+                        <i class="fab fa-google"></i> Google
+                    </button>
+                    <button class="social-btn github-btn">
+                        <i class="fab fa-github"></i> GitHub
+                    </button>
+                    <button class="social-btn linkedin-btn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

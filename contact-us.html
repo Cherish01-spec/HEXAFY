@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hexafy</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="glow-effect">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <span class="neon-text">HEXAFY</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="neon-hover">Home</a></li>
+                    <li><a href="courses.html" class="neon-hover">Courses</a></li>
+                    <li><a href="internships.html" class="neon-hover">Internships</a></li>
+                    <li><a href="index.html#testimonials" class="neon-hover">Success Stories</a></li>
+                    <li><a href="verify-certificate.html" class="neon-hover">Verify Certificate</a></li>
+                    <li><a href="contact-us.html" class="neon-hover active">Contact</a></li>
+                    <li><a href="login.html" class="btn-login">Login</a></li>
+                    <li>
+                        <button class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="contact-bg"></div>
+        <div class="container">
+            <div class="contact-content reveal">
+                <h1 class="glowing-title">Get in <span class="neon-text">Touch</span></h1>
+                <p class="hero-subtitle">We're here to help and answer any questions you might have</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Main Section -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2 class="neon-text">Contact Information</h2>
+                    <p>Fill out the form or reach out to us through any of these channels:</p>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Headquarters</h3>
+                            <p>Hexafy Education Pvt. Ltd.<br>
+                            123 Tech Park, Sector 18<br>
+                            Bangalore, Karnataka 560001</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone Numbers</h3>
+                            <p>Admissions: +91 98765 43210<br>
+                            Support: +91 98765 43211<br>
+                            Internships: +91 98765 43212</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Addresses</h3>
+                            <p>General: hello@hexafy.in<br>
+                            Support: support@hexafy.in<br>
+                            Careers: careers@hexafy.in</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Working Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                            Saturday: 10:00 AM - 4:00 PM<br>
+                            Sunday: Closed</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2 class="neon-text">Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" required class="neon-input">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required class="neon-input">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required class="neon-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="department">Department</label>
+                            <select id="department" name="department" class="neon-input">
+                                <option value="">Select Department</option>
+                                <option value="admissions">Admissions</option>
+                                <option value="support">Technical Support</option>
+                                <option value="internships">Internships</option>
+                                <option value="careers">Careers</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6" required class="neon-input"></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="attachment">Attachment (Optional)</label>
+                            <input type="file" id="attachment" name="attachment" class="neon-input file-input">
+                            <small>Max file size: 5MB (PDF, JPG, PNG)</small>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary neon-btn submit-btn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Map Section -->
+    <section class="contact-map">
+        <div class="container">
+            <h2 class="section-title reveal">Our <span class="neon-text">Location</span></h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.013074448534!2d77.59418931482193!3d12.971590990856227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf5df53c8e6b6f6b!2sBangalore%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Still Have Questions?</h2>
+                <p>Check out our FAQ section or schedule a callback with our counselor</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn-secondary">View FAQs</a>
+                    <a href="#" class="btn-primary neon-btn">Request Callback</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Same as index.html footer -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
